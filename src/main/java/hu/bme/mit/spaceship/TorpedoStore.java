@@ -39,6 +39,7 @@ public class TorpedoStore {
     Random generator = new Random();
     double r = generator.nextDouble();
 
+    
     if (r >= FAILURE_RATE) {
       // successful firing
       this.torpedoCount =- numberOfTorpedos;
